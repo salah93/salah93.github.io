@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Mi Casa Es Su Casa
-tagline: write what you learn
+title: Thoughts and Tutorials
+tagline:
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 ## Posts
 
 <ul class="posts">
