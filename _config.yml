@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -11,7 +11,7 @@ highlighter: pygments
 title : Salah Ahmed
 author :
     name : Salah Ahmed
-    email : sa2484 followed by @ nyu (dot) edu
+    email : sa2484@nyu.edu
     github : salah93
     twitter : saloohimon
 tagline: Site Tagline
