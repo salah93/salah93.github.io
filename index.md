@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Thoughts and Tutorials
-tagline:
+title: Place thoughts here
+tagline: challenge: write an article a day
 ---
 {% include JB/setup %}
 
