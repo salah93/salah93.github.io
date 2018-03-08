@@ -1,20 +1,25 @@
 ---
 layout: post
-category : command-line
+category : python
 tagline:
-tags : [awk, intro, beginner, commandline, unix]
+tags : [intro, python, ipython]
 ---
 {% include JB/setup %}
 
 IPython is a very helpful tool in prototyping and testing code in python. Its many rich features make exploring code base's painless and easy.
 
+## installation
+```bash
+pip install -U ipython
+ipython
+```
 ## magic
-+ %load
-+ %run
-+ %magic
-+ %hist
-+ %timeit
-+ %time
+ipython has a set of "magic" commands
++ %load - loads file (copies file into repl)
++ %run - runs file (global variables and functions enter namespace)
++ %magic - list magic variables
++ %hist - history of current or previous repl sessions
++ %timeit - time execution of python statement
 
 ## help
 ### question mark
@@ -38,7 +43,7 @@ where X is the number of the output/input
 + output: \_X
 + input:  \_iX
 
-## logging
+## logging sessions
 + %logstart -ort
 + %logoff
 + %logon
@@ -48,8 +53,11 @@ where X is the number of the output/input
 
 ## profiling
 + python -m cProfile cprofile_example.py
-+ %prun -s cumulative -l 7 run_experiment()
-+ %run -p -s cumulative run_experiment.py
+```
+%prun -s cumulative -l 7 run_experiment()
+%run -p -s cumulative run_experiment.py
+```
+
 + line_profiler
 
 ```bash
