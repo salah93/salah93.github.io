@@ -6,7 +6,7 @@ tags : [python3.6, vim, python]
 ---
 {% include JB/setup %}
 
-Recently I started using [blank](https://github.com/psf/black) for my code formatting. I set it up in vim with [ALE](https://github.com/dense-analysis/ale), but the only catch was that it required vim with python3.6 support.
+Recently I started using [black](https://github.com/psf/black) for my code formatting. I set it up in vim with [ALE](https://github.com/dense-analysis/ale), but the only catch was that it required vim with python3.6 support.
 
 
 # installing python3.6+
