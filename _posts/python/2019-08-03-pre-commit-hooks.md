@@ -24,21 +24,14 @@ Now all hooks will run before each commit.
 ## using hooks
 create a file `.pre-commit-config.yaml` in the top level directory.
 
-the yaml file is equivalent to the following json
-```json
-{
-    "repos": [
-        {
-            "repo": "https://github.com/pre-commit/pre-commit-hooks",
-            "refv": "v1.2.3",
-            "hooks": [
-                {
-                    "id": "flake8"
-                }
-            ]
-        }
-    ]
-}
+```yml
+---
+repos:
+-   repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.7
 ```
 
 this file will clone each repo at the tag you specify with "refv" and run the hooks with the id you specify
@@ -48,17 +41,12 @@ there are [a lot more config options](https://pre-commit.com/#plugins) than the 
 ## creating hooks
 To create a hook, create a file called `.pre-commit-hooks.yaml`
 
-the yaml file is equivalent to the following json
-
-```json
-[
-    {
-        "id": "flake8",
-        "name": "python flake8 linter",
-        "entry": "flake8",
-        "language": "python"
-    }
-]
+```yml
+---
+- id: flake8
+  name: python flake8 linter
+  entry: flake8
+  language: python
 ```
 
 For each hook, we define an id, name, entry, and language.
