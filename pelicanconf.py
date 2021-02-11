@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+THEME = '/home/salah/pelican-themes/aboutwilson'
 AUTHOR = 'Salah Ahmed'
-SITENAME = 'salah.xyz'
+SITENAME = 'salah'
 SITEURL = ''
 
 PATH = 'content'
