@@ -1,106 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <meta name="generator" content="Pelican" />
-        <title>salah.xyz - bash</title>
-        <link rel="stylesheet" href="https://salah93.github.io/theme/css/main.css" />
-        <link href="https://salah93.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="salah.xyz Atom Feed" />
+	<meta charset="utf-8">
+	<title>bash — salah</title>
+	<meta name="description" content="All posts which refer to category bash">
+	<meta name="author" content="Salah Ahmed">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="https://salah93.github.io/theme/html5.js"></script>
+		<![endif]-->
+	<link href="https://salah93.github.io/theme/css/ipython.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
+	<link href="https://salah93.github.io/theme/css/local.css" rel="stylesheet">
+	<link href="https://salah93.github.io/theme/css/pygments.css" rel="stylesheet">
 </head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://salah93.github.io/">salah.xyz</a></h1>
-                <nav><ul>
-                    <li class="active"><a href="https://salah93.github.io/category/bash.html">bash</a></li>
-                    <li><a href="https://salah93.github.io/category/python.html">python</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="https://salah93.github.io/compressing-files.html">Compressing files</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2017-03-25T00:00:00-04:00">
-                Published: Sat 25 March 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://salah93.github.io/author/salah-ahmed.html">Salah Ahmed</a>
-        </address>
-<p>In <a href="https://salah93.github.io/category/bash.html">bash</a>.</p>
-
-</footer><!-- /.post-info --><h1>tar</h1>
-<p>Compressing files with tar is simple</p>
-<div class="highlight"><pre><span></span><code><span class="err"># compress</span>
-<span class="err">tar cvfz compressed.tar.gz directory_to_compress/</span>
-<span class="err"># uncompress</span>
-<span class="err">tar xvfz compressed.tar.gz</span>
-</code></pre></div>
-
-
-<table>
-<thead>
-<tr>
-<th>argument</th>
-<th>what it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>c</td>
-<td>create new archive</td>
-</tr>
-<tr>
-<td>z</td>
-<td>compress/uncompress with gzip</td>
-</tr>
-<tr>
-<td>j</td>
-<td>compress/uncompress with bzip</td>
-</tr>
-<tr>
-<td>v</td>
-<td>list files to standard output that are handled</td>
-</tr>
-<tr>
-<td>f</td>
-<td>after this argument is the archive file name</td>
-</tr>
-<tr>
-<td>x</td>
-<td>extract a <code>.tar</code> file</td>
-</tr>
-</tbody>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1><a href="https://salah93.github.io/">salah</a>
+			<br>	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+<h1>Category <small>bash</small></h1>
+<table class="table">
+    <tbody>
+        <tr>
+        <td>25 Mar 2017</td>
+        <td><a href='https://salah93.github.io/compressing-files.html'>Compressing files</a></td>
+        </tr>
+    </tbody>
 </table>
-<p>Note that v is optional, and that "z" can be replaced with "j"</p>
-<h2>reference</h2>
-<p><a href="http://www.thegeekstuff.com/2010/04/unix-tar-command-examples">geekstuff</a></p>
-<h2>Python</h2>
-<p>The <code>shutil</code> module provides shell utilities</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">shutil</span>
-<span class="n">shutil</span><span class="o">.</span><span class="n">make_archive</span><span class="p">(</span><span class="s1">&#39;compressed_name&#39;</span><span class="p">,</span> <span class="s1">&#39;gztar&#39;</span><span class="p">,</span> <span class="n">base_dir</span><span class="o">=</span><span class="s1">&#39;directory_to_compress&#39;</span> <span class="p">)</span>
-</code></pre></div>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://salah93.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="https://twitter.com/salah_halas_">twitter</a></li>
-                            <li><a href="https://github.com/salah93">github</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+		</div>
+	</div> 	<!-- <hr> -->
+</div> <!-- /container -->
+<footer class="aw-footer bg-danger">
+	<div class="container"> <!-- footer -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Navigation</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="https://salah93.github.io">salah</a></li>
+							<li><a href="https://salah93.github.io/feeds/all.atom.xml" type="application/atom+xml"><i class="fa fa-rss "></i> atom</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Author</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="https://twitter.com/salah_halas_">twitter</a></li>
+							<li><a href="https://github.com/salah93">github</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Categories</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="https://salah93.github.io/category/bash.html">bash (1)</a></li>
+							<li><a href="https://salah93.github.io/category/python.html">python (1)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center center-block aw-bottom">
+			<p>&copy; Salah Ahmed 2016</p>
+			<p>Powered by Pelican</p>
+		</div>
+	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("div.collapseheader").click(function () {
+		$header = $(this).children("span").first();
+		$codearea = $(this).children(".input_area");
+		$codearea.slideToggle(500, function () {
+			$header.text(function () {
+				return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+			});
+		});
+	});
+});
+</script>
 </body>
 </html>
