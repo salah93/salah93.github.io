@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>ipython tips</title>
+        <link rel="stylesheet" href="https://salah93.github.io/theme/css/main.css" />
+        <link href="https://salah93.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="salah.xyz Atom Feed" />
+        <meta name="description" content="IPython is a very helpful tool in prototyping and testing code in python. Its many rich features make exploring code base's painless and easy...." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://salah93.github.io/">salah.xyz</a></h1>
+                <nav><ul>
+                    <li><a href="https://salah93.github.io/category/bash.html">bash</a></li>
+                    <li class="active"><a href="https://salah93.github.io/category/python.html">python</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://salah93.github.io/ipython-tips.html" rel="bookmark"
+           title="Permalink to ipython tips">ipython tips</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-09-17T10:00:00-04:00">
+                Published: Sun 17 September 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://salah93.github.io/author/salah-ahmed.html">Salah Ahmed</a>
+        </address>
+<p>In <a href="https://salah93.github.io/category/python.html">python</a>.</p>
+
+</footer><!-- /.post-info -->      <p>IPython is a very helpful tool in prototyping and testing code in python. Its many rich features make exploring code base's painless and easy.</p>
+<h2>installation</h2>
+<div class="highlight"><pre><span></span><code>pip install -U ipython
+ipython
+</code></pre></div>
+
+
+<h2>magic</h2>
+<p>ipython has a set of "magic" commands
++ %load - loads file (copies file into repl)
++ %run - runs file (global variables and functions enter namespace)
++ %magic - list magic variables
++ %hist - history of current or previous repl sessions
++ %timeit - time execution of python statement</p>
+<h2>help</h2>
+<h3>question mark</h3>
+<p>Using the "?" we can find methods that match certain patterns and we can look up docstrings/source code.
+This can help us understand parameters and method function. The "?" can also be used with magic commands!
++ np.<em>load</em>?
++ requests.get?? =&gt; source code
++ requests.get? =&gt; docstring
++ %timeit?
++ %magic
++ %help</p>
+<h1>debugging</h1>
+<ul>
+<li>%pdb =&gt; automatically jump into debugger when exception occurs</li>
+<li>%debug =&gt; jump into debugger on last exception</li>
+<li>%run -d filename.py =&gt; execute program via debugger</li>
+<li>%whos</li>
+</ul>
+<h2>recalling past commands</h2>
+<p>where X is the number of the output/input
++ output: _X
++ input:  _iX</p>
+<h2>logging sessions</h2>
+<ul>
+<li>%logstart -ort</li>
+<li>%logoff</li>
+<li>%logon</li>
+<li>%logstate</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://salah93.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/salah_halas_">twitter</a></li>
+                            <li><a href="https://github.com/salah93">github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
